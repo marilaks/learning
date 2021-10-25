@@ -10,8 +10,11 @@ int main(){
 	cout<<"enter limit"<<endl;
 	cin>>i;
 	
+	cout<<"fibonacci value is "<<n1<<endl;
+	cout<<"fibonacci value is "<<n2<<endl;
+	
 	//function
-	for(int j=0;j<i;j++){
+	for(int j=1;j<i;j++){
 		
 		sum = n1+n2;
 		n1 = n2;
