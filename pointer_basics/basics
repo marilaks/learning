@@ -32,6 +32,10 @@ int main(){
 	cout<<"address of a "<<&a<<endl;
 	cout<<"p = "<<p<<endl;
 	cout<<"address of p "<<&p<<endl;
+	cout<<"size of a "<<sizeof(a)<<endl;
+	cout<<"size of p "<<sizeof(p)<<endl;
+	cout<<"address of p+1 "<<&p+1<<endl;
+
 }
 */
 
