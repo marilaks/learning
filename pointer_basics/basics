@@ -35,6 +35,8 @@ int main(){
 	cout<<"size of a "<<sizeof(a)<<endl;
 	cout<<"size of p "<<sizeof(p)<<endl;
 	cout<<"address of p+1 "<<&p+1<<endl;
+        //we have not initialized so it wil be 0 at p+1
+	cout<<"value at address of p+1 "<<*(p+1)<<endl;
 
 }
 */
