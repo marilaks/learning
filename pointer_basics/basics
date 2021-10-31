@@ -17,3 +17,22 @@ int main(){
 	//access value using pointer
 	cout<<"accessing value "<<*p<<endl;
 }
+/*freecodecamp
+int main(){
+	//decalring a variable
+	int a = 10;
+	
+	//decalare pointer to it
+	int* p;
+	
+	//initializing the pointer 
+	p = &a;
+	
+	cout<<"a = "<<a<<endl;
+	cout<<"address of a "<<&a<<endl;
+	cout<<"p = "<<p<<endl;
+	cout<<"address of p "<<&p<<endl;
+}
+*/
+
+
