@@ -1,0 +1,28 @@
+#include <iostream>
+#include <sstream>
+#include <string>
+
+using namespace std;
+template<typename Type>
+string toHex(const Type& value, bool showBase = true){
+	stringstream strm;
+	if(showBase)
+		strm << showbase;
+	strm  <<  hex << value;
+	string to_hex;
+	if(!(strm >>  to_hex)) throw std::exception("Conversion to hex failed!\n");
+	return to_hex;
+}
+typedef __int64 int64;
+
+int64 hexToInt64(const string hexStr){
+	stringstream strm;
+	strm << hex << hexStr;
+	int64 value = 0;
+	if(!(strm >> value)) throw std::exception("Conversion to int64 failed!\n");
+	return value;
+}
+int main(){
+	cout << hexToInt64(toHex(3145131833)) << endl;	
+	cout << toHex( hexToInt64("bb76e739")) << endl;
+}
